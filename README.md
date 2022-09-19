@@ -13,7 +13,7 @@ data-platform-business-partner-sql には、sqlの設定ファイルとして、
 * data-platform-business-partner-sql-role-data.sql（データ連携基盤 ビジネスパートナ - ロールデータ）  
 * data-platform-business-partner-sql-address-data.sql（データ連携基盤 ビジネスパートナ - 住所データ）
 * data-platform-business-partner-sql-bank-data.sql （データ連携基盤 ビジネスパートナ - 銀行データ）
-* data-platform-business-partner-contact-data.sql （データ連携基盤　ビジネスパートナ - コンタクトデータ）
+* data-platform-business-partner-contact-data.sql （データ連携基盤 ビジネスパートナ - コンタクトデータ）
 * data-platform-business-partner-sql-customer-data.sql （データ連携基盤 ビジネスパートナ - 得意先データ）
 * data-platform-business-partner-sql-customer-sales-area-data.sql（データ連携基盤 ビジネスパートナ - 得意先 販売組織データ）
 * data-platform-business-partner-sql-customer-partner-function-data.sql（データ連携基盤 ビジネスパートナ - 得意先 取引先機能データ）
