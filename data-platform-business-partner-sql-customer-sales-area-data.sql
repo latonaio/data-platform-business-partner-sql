@@ -1,0 +1,33 @@
+CREATE TABLE `data_platform_business_partner_customer_sales_area_data`
+(
+    `Customer`              varchar(10) NOT NULL,
+    `SalesOrganization`     varchar(4) NOT NULL,
+    `DistributionChannel`   varchar(2) NOT NULL,
+    `Division`              varchar(2) NOT NULL,
+    `CompleteDeliveryIsDefined` tinyint(1) DEFAULT NULL,
+    `Currency`              varchar(5) DEFAULT NULL,
+    `CustomerAccountAssignmentGroup` varchar(2) DEFAULT NULL,
+    `CustomerPaymentTerms`  varchar(4) DEFAULT NULL,
+    `CustomerPriceGroup`    varchar(2) DEFAULT NULL,
+    `CustomerPricingProcedure` varchar(2) DEFAULT NULL,
+    `DeliveryPriority`      varchar(2) DEFAULT NULL,
+    `IncotermsClassification` varchar(3) DEFAULT NULL,
+    `InvoiceDate`           varchar(2) DEFAULT NULL,
+    `OrderCombinationIsAllowed` tinyint(1) DEFAULT NULL,
+    `PartialDeliveryIsAllowed` tinyint(1) DEFAULT NULL,
+    `PriceListType`         varchar(2) DEFAULT NULL,
+    `SalesGroup`            varchar(3) DEFAULT NULL,
+    `SalesOffice`           varchar(4) DEFAULT NULL,
+    `ShippingCondition`     varchar(2) DEFAULT NULL,
+    `SupplyingPlant`        varchar(4) DEFAULT NULL,
+    `SalesDistrict`         varchar(6) DEFAULT NULL,
+    `InvoiceListSchedule`   varchar(2) DEFAULT NULL,
+    `ExchangeRateType`      varchar(4) DEFAULT NULL,
+    `OrderIsBlockedForCustomer` varchar(2) DEFAULT NULL,
+    `DeliveryIsBlockedForCustomer` varchar(2) DEFAULT NULL,
+    `BillingIsBlockedForCustomer` varchar(2) DEFAULT NULL,
+    `DeletionIndicator`     tinyint(1) DEFAULT NULL,
+    PRIMARY KEY (`Customer`, `SalesOrganization`, `DistributionChannel`, `Division`),
+    CONSTRAINT `DataPlatformBusinessPartnerCustomerSalesAreaData_fk` FOREIGN KEY (`Customer`) REFERENCES `data_platform_business_partner_general_data` (`BusinessPartner`)
+) ENGINE = InnoDB
+  DEFAULT CHARSET = utf8mb4;
