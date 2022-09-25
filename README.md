@@ -1,6 +1,5 @@
 # data-platform-business-partner-sql 
 data-platform-business-partner-sql  は、周辺業務システムと連携されたBP（ビジネスパートナ）データを保存するSQLテーブルを作成するためのレポジトリです。  
-data-platform-business-partner-sql  は、そのままクラウド環境におけるアプリケーションにも、適用可能です。  
 
 ## 前提条件  
 data-platform-business-partner-sql  は、データ連携にあたり、API を利用し、本レポジトリ の sql 設定ファイルの内容は、下記 URL の API 仕様を前提としています。  
