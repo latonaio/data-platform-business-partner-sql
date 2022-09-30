@@ -8,7 +8,6 @@ CREATE TABLE `data_platform_business_partner_customer_partner_function_data`
   `PartnerCounter`                  varchar(3) NOT NULL,
   `PartnerFunction`                 varchar(2) DEFAULT NULL,
   `PartnerFunctionBusinessPartner`  varchar(10) DEFAULT NULL,
-  `CustomerPartnerDescription`      varchar(30) DEFAULT NULL,
   `DefaultPartner`                  tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`BusinessPartner`, `Customer`, `SalesOrganization`, `DistributionChannel`, `Division`, `PartnerCounter`),
   CONSTRAINT `DataPlatformBusinessPartnerCustomerPartnerFunctionData_fk` FOREIGN KEY (`BusinessPartner`) REFERENCES `data_platform_business_partner_general_data` (`BusinessPartner`)
