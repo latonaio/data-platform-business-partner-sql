@@ -9,7 +9,6 @@ CREATE TABLE `data_platform_business_partner_customer_sales_area_data`
     `CustomerPaymentTerms`            varchar(4) DEFAULT NULL,
     `IncotermsClassification`         varchar(3) DEFAULT NULL,
     `InvoiceDate`                     varchar(2) DEFAULT NULL,
-    `SalesDistrict`                   varchar(6) DEFAULT NULL,
     `OrderIsBlockedForCustomer`       varchar(2) DEFAULT NULL,
     `DeliveryIsBlockedForCustomer`    varchar(2) DEFAULT NULL,
     `BillingIsBlockedForCustomer`     varchar(2) DEFAULT NULL,
