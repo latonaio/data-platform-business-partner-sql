@@ -6,7 +6,7 @@ CREATE TABLE `data_platform_business_partner_address_data`
     `ValidityStartDate`     varchar(80) DEFAULT NULL,
     `Country`               varchar(3) DEFAULT NULL,
     `Region`                varchar(3) DEFAULT NULL,
-    `District`              varchar(6) DEFAULT NULL,
+    `District`              varchar(6) DEFAULT NULL,    --新規追加
     `StreetName`            varchar(60) DEFAULT NULL,
     `CityName`              varchar(40) DEFAULT NULL,
     `PostalCode`            varchar(10) DEFAULT NULL,
