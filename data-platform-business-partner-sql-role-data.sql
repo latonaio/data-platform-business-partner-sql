@@ -1,7 +1,7 @@
 CREATE TABLE `data_platform_business_partner_role_data`
 (
     `BusinessPartner`       varchar(10) NOT NULL,
-    `BusinessPartnerRole`   varchar(7) NOT NULL,
+    `BusinessPartnerRole`   varchar(20) NOT NULL,
     `ValidTo`               varchar(80) NOT NULL,
     `ValidFrom`             varchar(80) DEFAULT NULL,
     PRIMARY KEY (`BusinessPartner`, `BusinessPartnerRole`, `ValidTo`),
