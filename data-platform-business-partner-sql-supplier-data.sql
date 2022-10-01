@@ -3,7 +3,6 @@ CREATE TABLE `data_platform_business_partner_supplier_data`
   `BusinessPartner`              varchar(10) NOT NULL,      --新規追加
   `Supplier`                     varchar(10) NOT NULL,
   `CreationDate`                 varchar(80) DEFAULT NULL,
-  `Customer`                     varchar(10) DEFAULT NULL,
   `PaymentIsBlockedForSupplier`  tinyint(1) DEFAULT NULL,
   `PostingIsBlocked`             tinyint(1) DEFAULT NULL,
   `PurchasingIsBlocked`          tinyint(1) DEFAULT NULL,
