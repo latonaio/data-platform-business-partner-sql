@@ -22,7 +22,7 @@ data-platform-business-partner-sql には、sqlの設定ファイルとして、
 * data-platform-business-partner-sql-supplier-data.sql （データ連携基盤 ビジネスパートナ - 仕入先データ）
 * data-platform-business-partner-sql-supplier-partner-function-data.sql （データ連携基盤 ビジネスパートナ - 仕入先 取引先機能データ）
 * data-platform-business-partner-sql-supplier-partner-plant-data.sql（データ連携基盤 ビジネスパートナ - 得意先 取引先プラントデータ）
-* data-platform-business-partner-sql-supplier-purchasing-organization-data.sql（データ連携基盤 ビジネスパートナ - 仕入先 購買組織データ）
+* data-platform-business-partner-sql-supplier-purchasing-area-data.sql（データ連携基盤 ビジネスパートナ - 仕入先 購買エリアデータ）
 * data-platform-business-partner-sql-supplier-accounting-data.sql（データ連携基盤 ビジネスパートナ - 仕入先 会計データ）
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法  
