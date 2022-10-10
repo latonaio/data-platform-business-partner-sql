@@ -1,6 +1,6 @@
 CREATE TABLE `data_platform_business_partner_accounting_data`
 (
-  `BusinessPartner`                 varchar(10) NOT NULL,
+  `BusinessPartner`                 int(10) NOT NULL,
   `Currency`                        varchar(5) DEFAULT NULL,
   `ChartOfAccounts`                 varchar(4) DEFAULT NULL,
   `FiscalYearVariant`               varchar(4) DEFAULT NULL,

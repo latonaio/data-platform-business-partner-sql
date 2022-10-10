@@ -1,7 +1,7 @@
 CREATE TABLE `data_platform_business_partner_bank_data`
 (
-  `BusinessPartner`           varchar(10) NOT NULL,
-  `BankIdentification`        varchar(4) NOT NULL,
+  `BusinessPartner`           int(10) NOT NULL,
+  `BankIdentification`        int(4) NOT NULL,
   `BankCountryKey`            varchar(3) DEFAULT NULL,
   `BankName`                  varchar(60) DEFAULT NULL,
   `BankNumber`                varchar(15) DEFAULT NULL,
