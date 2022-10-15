@@ -10,18 +10,22 @@ data-platform-business-partner-sql には、sqlの設定ファイルとして、
 
 * data-platform-business-partner-sql-general-data.sql （データ連携基盤 ビジネスパートナ - 一般データ）
 * data-platform-business-partner-sql-role-data.sql（データ連携基盤 ビジネスパートナ - ロールデータ）  
-* data-platform-business-partner-sql-bank-data.sql （データ連携基盤 ビジネスパートナ - 銀行データ）
-* data-platform-business-partner-relationship-data.sql （データ連携基盤 ビジネスパートナ - 関係データ）
+* data-platform-business-partner-sql-fin-inst-data.sql （データ連携基盤 ビジネスパートナ - 金融機関データ）
+* data-platform-business-partner-sql-relationship-data.sql （データ連携基盤 ビジネスパートナ - 関係データ）
 * data-platform-business-partner-sql-accounting-data.sql（データ連携基盤 ビジネスパートナ - 会計データ）   
 * data-platform-business-partner-sql-customer-data.sql （データ連携基盤 ビジネスパートナ - 得意先データ）
 * data-platform-business-partner-sql-customer-partner-function-data.sql（データ連携基盤 ビジネスパートナ - 得意先 取引先機能データ）
 * data-platform-business-partner-sql-customer-partner-plant-data.sql（データ連携基盤 ビジネスパートナ - 得意先 取引先プラントデータ）
-* data-platform-business-partner-sql-customer-sales-area-data.sql（データ連携基盤 ビジネスパートナ - 得意先 販売組織データ）
+* data-platform-business-partner-sql-customer-sales-area-data.sql（データ連携基盤 ビジネスパートナ - 得意先 販売エリアデータ）
+* data-platform-business-partner-sql-customer-sales-area-tax-data.sql（データ連携基盤 ビジネスパートナ - 得意先 販売エリア税データ）
+* data-platform-business-partner-sql-customer-fin-inst-data.sql（データ連携基盤 ビジネスパートナ - 得意先 金融機関データ）
 * data-platform-business-partner-sql-customer-accounting-data.sql（データ連携基盤 ビジネスパートナ - 得意先 会計データ）   
 * data-platform-business-partner-sql-supplier-data.sql （データ連携基盤 ビジネスパートナ - 仕入先データ）
 * data-platform-business-partner-sql-supplier-partner-function-data.sql （データ連携基盤 ビジネスパートナ - 仕入先 取引先機能データ）
 * data-platform-business-partner-sql-supplier-partner-plant-data.sql（データ連携基盤 ビジネスパートナ - 得意先 取引先プラントデータ）
 * data-platform-business-partner-sql-supplier-purchasing-area-data.sql（データ連携基盤 ビジネスパートナ - 仕入先 購買エリアデータ）
+* data-platform-business-partner-sql-supplier-purchasing-area-tax-data.sql（データ連携基盤 ビジネスパートナ - 仕入先 購買エリア税データ）
+* data-platform-business-partner-sql-supplier-fin-inst-data.sql（データ連携基盤 ビジネスパートナ - 仕入先 金融機関データ）
 * data-platform-business-partner-sql-supplier-accounting-data.sql（データ連携基盤 ビジネスパートナ - 仕入先 会計データ）
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法  

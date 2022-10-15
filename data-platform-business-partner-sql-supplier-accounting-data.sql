@@ -1,6 +1,6 @@
 CREATE TABLE `data_platform_business_partner_supplier_accounting_data`
 (
-    `BusinessPartner`             int(10) NOT NULL,          --新規追加
+    `BusinessPartner`             int(10) NOT NULL,          -- 新規追加
     `Supplier`                    int(10) NOT NULL,
     `PaymentBlockingReason`       varchar(1) DEFAULT NULL,
     `PaymentMethodsList`          varchar(10) DEFAULT NULL,

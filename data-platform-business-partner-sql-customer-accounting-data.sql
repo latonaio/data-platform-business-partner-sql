@@ -1,4 +1,4 @@
-CREATE TABLE `data_platform_business_partner_customer_accounting_data`   --名称変更
+CREATE TABLE `data_platform_business_partner_customer_accounting_data`   -- 名称変更
 (
     `BusinessPartner`                 int(10) NOT NULL,
     `Customer`                        int(10) NOT NULL,

@@ -1,6 +1,6 @@
 CREATE TABLE `data_platform_business_partner_customer_data`
 (
-  `BusinessPartner`               int(10) NOT NULL,      --新規追加
+  `BusinessPartner`               int(10) NOT NULL,      -- 新規追加
   `Customer`                      int(10) NOT NULL,
   `BillingIsBlockedForCustomer`   tinyint(1) DEFAULT NULL,
   `CreationDate`                  varchar(80) DEFAULT NULL,

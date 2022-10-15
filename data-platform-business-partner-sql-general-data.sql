@@ -14,11 +14,11 @@ CREATE TABLE `data_platform_business_partner_general_data`
   `OrganizationBPName2`             varchar(100) DEFAULT NULL,
   `OrganizationBPName3`             varchar(100) DEFAULT NULL,
   `OrganizationBPName4`             varchar(100) DEFAULT NULL,
-  `BPGroup1`                        varchar(6) DEFAULT NULL,  --新規追加
-  `BPGroup2`                        varchar(6) DEFAULT NULL,  --新規追加
-  `BPGroup3`                        varchar(6) DEFAULT NULL,  --新規追加
-  `BPGroup4`                        varchar(6) DEFAULT NULL,  --新規追加
-  `BPGroup5`                        varchar(6) DEFAULT NULL,  --新規追加
+  `BPGroup1`                        varchar(6) DEFAULT NULL,  -- 新規追加
+  `BPGroup2`                        varchar(6) DEFAULT NULL,  -- 新規追加
+  `BPGroup3`                        varchar(6) DEFAULT NULL,  -- 新規追加
+  `BPGroup4`                        varchar(6) DEFAULT NULL,  -- 新規追加
+  `BPGroup5`                        varchar(6) DEFAULT NULL,  -- 新規追加
   `OrganizationFoundationDate`      varchar(80) DEFAULT NULL,
   `OrganizationLiquidationDate`     varchar(80) DEFAULT NULL,
   `SearchTerm1`                     varchar(20) DEFAULT NULL,

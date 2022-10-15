@@ -1,12 +1,12 @@
 CREATE TABLE `data_platform_business_partner_customer_sales_area_data`
 (
-    `BusinessPartner`                 int(10) NOT NULL,      --新規追加
+    `BusinessPartner`                 int(10) NOT NULL,         -- 新規追加
     `Customer`                        int(10) NOT NULL,
     `SalesOrganization`               varchar(4) NOT NULL,
     `DistributionChannel`             varchar(2) NOT NULL,
     `Division`                        varchar(2) NOT NULL,
     `Currency`                        varchar(5) DEFAULT NULL,
-    `CustomerPaymentTerms`            varchar(4) DEFAULT NULL,
+    `PaymentTerms`                    varchar(4) DEFAULT NULL,  -- 名称変更
     `IncotermsClassification`         varchar(3) DEFAULT NULL,
     `InvoiceDate`                     varchar(2) DEFAULT NULL,
     `OrderIsBlockedForCustomer`       tinyint(1) DEFAULT NULL,
