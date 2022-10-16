@@ -7,7 +7,7 @@ CREATE TABLE `data_platform_business_partner_customer_sales_area_data`
     `Division`                        varchar(2) NOT NULL,
     `Currency`                        varchar(5) DEFAULT NULL,
     `PaymentTerms`                    varchar(4) DEFAULT NULL,  -- 名称変更
-    `IncotermsClassification`         varchar(3) DEFAULT NULL,
+    `Incoterms`                       varchar(3) DEFAULT NULL,  -- 名称変更
     `InvoiceDate`                     varchar(2) DEFAULT NULL,
     `OrderIsBlockedForCustomer`       tinyint(1) DEFAULT NULL,
     `DeliveryIsBlockedForCustomer`    tinyint(1) DEFAULT NULL,

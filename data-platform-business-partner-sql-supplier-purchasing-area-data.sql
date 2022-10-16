@@ -5,7 +5,7 @@ CREATE TABLE `data_platform_business_partner_supplier_purchasing_area_data`
     `PurchaseOrganization`              varchar(4) NOT NULL,
     `DistributionChannel`               varchar(2) NOT NULL,        -- 新規追加
     `Division`                          varchar(2) NOT NULL,        -- 新規追加
-    `IncotermsClassification`           varchar(3) DEFAULT NULL,
+    `Incoterms`                         varchar(3) DEFAULT NULL,    -- 名称変更
     `InvoiceIsGoodsReceiptBased`        tinyint(1) DEFAULT NULL,
     `PaymentTerms`                      varchar(4) DEFAULT NULL,
     `PurOrdAutoGenerationIsAllowed`     tinyint(1) DEFAULT NULL,
