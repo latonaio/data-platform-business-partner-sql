@@ -7,7 +7,7 @@ CREATE TABLE `data_platform_business_partner_customer_accounting_data`   -- ÂêçÁ
     `PaymentMethodsList`              varchar(10) DEFAULT NULL,
     `PaymentTerms`                    varchar(4) DEFAULT NULL,
     `ReconciliationAccount`           varchar(10) DEFAULT NULL,
-    `DeletionIndicator`               tinyint(1) DEFAULT NULL,
+    `IsMarkedForDeletion`             tinyint(1) DEFAULT NULL,
     PRIMARY KEY (`BusinessPartner`, `Customer`),
     CONSTRAINT `DataPlatformBusinessPartnerCustomerAccountingData_fk` FOREIGN KEY (`BusinessPartner`, `Customer`) REFERENCES `data_platform_business_partner_customer_data` (`BusinessPartner`, `Customer`)
 ) ENGINE = InnoDB

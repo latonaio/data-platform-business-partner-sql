@@ -7,7 +7,7 @@ CREATE TABLE `data_platform_business_partner_customer_data`
   `DeliveryIsBlocked`             tinyint(1) DEFAULT NULL,
   `OrderIsBlockedForCustomer`     tinyint(1) DEFAULT NULL,
   `PostingIsBlocked`              tinyint(1) DEFAULT NULL,
-  `DeletionIndicator`             tinyint(1) DEFAULT NULL,
+  `IsMarkedForDeletion`           tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`BusinessPartner`, `Customer`),
   CONSTRAINT `DataPlatformBusinessPartnerCustomerData_fk` FOREIGN KEY (`BusinessPartner`) REFERENCES `data_platform_business_partner_general_data` (`BusinessPartner`)
 ) ENGINE = InnoDB

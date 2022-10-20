@@ -9,7 +9,7 @@ CREATE TABLE `data_platform_business_partner_supplier_accounting_data`
     `HouseBank`                   varchar(5) DEFAULT NULL,
     `ReconciliationAccount`       varchar(10) DEFAULT NULL,
     `SupplierIsBlockedForPosting` tinyint(1) DEFAULT NULL,
-    `DeletionIndicator`           tinyint(1) DEFAULT NULL,
+    `IsMarkedForDeletion`         tinyint(1) DEFAULT NULL,
     PRIMARY KEY (`BusinessPartner`, `Supplier`),
     CONSTRAINT `DataPlatformBusinessPartnerSupplierAccountingData_fk` FOREIGN KEY (`BusinessPartner`, `Supplier`) REFERENCES `data_platform_business_partner_supplier_data` (`BusinessPartner`, `Supplier`)
 ) ENGINE = InnoDB

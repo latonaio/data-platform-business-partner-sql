@@ -10,6 +10,7 @@ CREATE TABLE `data_platform_business_partner_supplier_partner_function_data`
   `PartnerFunctionBusinessPartner`  int(10) DEFAULT NULL,     -- 新規追加
   `DefaultPartner`                  tinyint(1) DEFAULT NULL,
   `CreationDate`                    varchar(80) DEFAULT NULL,
+  `IsMarkedForDeletion`             tinyint(1) DEFAULT NULL,  -- 新規追加
   PRIMARY KEY (`BusinessPartner`, `Supplier`, `PurchaseOrganization`, `DistributionChannel`, `Division`, `PartnerCounter`),
   CONSTRAINT `DataPlatformBusinessPartnerSupplierPartnerFunctionData_fk` FOREIGN KEY (`BusinessPartner`, `Supplier`, `PurchaseOrganization`, `DistributionChannel`, `Division`) REFERENCES `data_platform_business_partner_supplier_purchasing_area_data` (`BusinessPartner`, `Supplier`, `PurchaseOrganization`, `DistributionChannel`, `Division`)
 ) ENGINE = InnoDB

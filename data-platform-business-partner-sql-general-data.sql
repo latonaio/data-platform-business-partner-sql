@@ -29,7 +29,7 @@ CREATE TABLE `data_platform_business_partner_general_data`
   `GroupBusinessPartnerName1`       varchar(100) DEFAULT NULL,
   `GroupBusinessPartnerName2`       varchar(100) DEFAULT NULL,
   `AddressID`                       int(10) DEFAULT NULL,
-  `IsMarkedForArchiving`            tinyint(1) DEFAULT NULL,
+  `IsMarkedForDeletion`             tinyint(1) DEFAULT NULL,
   `BusinessPartnerIDByExtSystem`    varchar(20) DEFAULT NULL,
     PRIMARY KEY (`BusinessPartner`)
 ) ENGINE = InnoDB

@@ -11,7 +11,7 @@ CREATE TABLE `data_platform_business_partner_supplier_purchasing_area_data`
     `PurOrdAutoGenerationIsAllowed`     tinyint(1) DEFAULT NULL,
     `PurchaseOrderCurrency`             varchar(5) DEFAULT NULL,
     `PurchasingIsBlockedForSupplier`    tinyint(1) DEFAULT NULL,
-    `DeletionIndicator`                 tinyint(1) DEFAULT NULL,
+    `IsMarkedForDeletion`               tinyint(1) DEFAULT NULL,
     PRIMARY KEY (`BusinessPartner`, `Supplier`, `PurchaseOrganization`, `DistributionChannel`, `Division`),
     CONSTRAINT `DataPlatformBusinessPartnerSupplierPurchasingAreaData_fk` FOREIGN KEY (`BusinessPartner`, `Supplier`) REFERENCES `data_platform_business_partner_supplier_data` (`BusinessPartner`, `Supplier`)
 ) ENGINE = InnoDB

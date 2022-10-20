@@ -11,6 +11,7 @@ CREATE TABLE `data_platform_business_partner_supplier_partner_plant_data` -- 新
   `PlantCounter`                    int(3) NOT NULL,            -- 新規追加
   `Plant`                           varchar(4) DEFAULT NULL,    -- 新規追加
   `DefaultPlant`                    tinyint(1) DEFAULT NULL,    -- 新規追加
+  `IsMarkedForDeletion`             tinyint(1) DEFAULT NULL,    -- 新規追加
   PRIMARY KEY (`BusinessPartner`, `Supplier`, `PurchaseOrganization`, `DistributionChannel`, `Division`, `PartnerCounter`, `PartnerFunction`, `PartnerFunctionBusinessPartner`, `PlantCounter`),
   CONSTRAINT `DataPlatformBusinessPartnerSupplierPartnerPlantData_fk` FOREIGN KEY (`BusinessPartner`, `Supplier`, `PurchaseOrganization`, `DistributionChannel`, `Division`, `PartnerCounter`) REFERENCES `data_platform_business_partner_supplier_partner_function_data` (`BusinessPartner`, `Supplier`, `PurchaseOrganization`, `DistributionChannel`, `Division`, `PartnerCounter`)
 ) ENGINE = InnoDB

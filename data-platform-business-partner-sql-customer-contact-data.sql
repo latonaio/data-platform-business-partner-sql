@@ -3,7 +3,7 @@ CREATE TABLE `data_platform_business_partner_customer_contact_data`
   `BusinessPartner`               int(10) NOT NULL,            -- 新規追加
   `Customer`                      int(10) NOT NULL,            -- 新規追加
   `ContactID`                     int(4) NOT NULL,             -- 新規追加
-  `ContactPersionName`            varchar(100) DEFAULT NULL,   -- 新規追加
+  `ContactPersonName`             varchar(100) DEFAULT NULL,   -- 新規追加
   `EmailAddress`                  varchar(200) DEFAULT NULL,   -- 新規追加
   `PhoneNumber`                   varchar(100) DEFAULT NULL,   -- 新規追加
   `MobilePhoneNumber`             varchar(100) DEFAULT NULL,   -- 新規追加
@@ -13,7 +13,7 @@ CREATE TABLE `data_platform_business_partner_customer_contact_data`
   `ContactTag3`                   varchar(40) DEFAULT NULL,    -- 新規追加
   `ContactTag4`                   varchar(40) DEFAULT NULL,    -- 新規追加
   `DefaultContact`                tinyint(1) DEFAULT NULL,     -- 新規追加
-  `DeletionIndicator`             tinyint(1) DEFAULT NULL,     -- 新規追加
+  `IsMarkedForDeletion`           tinyint(1) DEFAULT NULL,     -- 新規追加
   PRIMARY KEY (`BusinessPartner`, `Customer`, `ContactID`) ,
   CONSTRAINT `DataPlatformBusinessPartnerCustomerContactData_fk` FOREIGN KEY (`BusinessPartner`, `Customer`) REFERENCES `data_platform_business_partner_customer_data` (`BusinessPartner`, `Customer`)
 ) ENGINE = InnoDB
