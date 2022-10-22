@@ -7,8 +7,12 @@ CREATE TABLE `data_platform_business_partner_customer_sales_area_tax_data`
     `Division`                        varchar(2) NOT NULL,
     `DepartureCountry`                varchar(3) NOT NULL,
     `TaxCategory`                     varchar(4) DEFAULT NULL,
-    `TaxClassification`               varchar(4) DEFAULT NULL,  -- 名称変更
+    `TaxClassification`               varchar(1) DEFAULT NULL,  -- 名称変更
+
     PRIMARY KEY (`BusinessPartner`, `Customer`, `SalesOrganization`, `DistributionChannel`, `Division`, `DepartureCountry`),
-    CONSTRAINT `DataPlatformBusinessPartnerCustomerSalesAreaTaxData_fk` FOREIGN KEY (`BusinessPartner`, `Customer`, `SalesOrganization`, `DistributionChannel`, `Division`) REFERENCES `data_platform_business_partner_customer_sales_area_data` (`BusinessPartner`, `Customer`, `SalesOrganization`, `DistributionChannel`, `Division`)
+
+    CONSTRAINT `DataPlatformBusinessPartnerCustomerSalesAreaTaxData_fk` FOREIGN KEY (`BusinessPartner`, `Customer`, `SalesOrganization`, `DistributionChannel`, `Division`) REFERENCES `data_platform_business_partner_customer_sales_area_data` (`BusinessPartner`, `Customer`, `SalesOrganization`, `DistributionChannel`, `Division`),
+    CONSTRAINT `DataPlatformBusinessPartnerCustomerSalesAreaTaxDataDepartureCountry_fk` FOREIGN KEY (`DepartureCountry`) REFERENCES `data_platform_country_country_data` (`Country`)
+    
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

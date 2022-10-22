@@ -31,6 +31,12 @@ CREATE TABLE `data_platform_business_partner_general_data`
   `AddressID`                       int(10) DEFAULT NULL,
   `IsMarkedForDeletion`             tinyint(1) DEFAULT NULL,
   `BusinessPartnerIDByExtSystem`    varchar(20) DEFAULT NULL,
-    PRIMARY KEY (`BusinessPartner`)
+
+    PRIMARY KEY (`BusinessPartner`),
+
+    CONSTRAINT `DataPlatformBusinessPartnerGeneralDataIndustry_fk` FOREIGN KEY (`Industry`) REFERENCES `data_platform_industry_industry_data` (`Industry`),
+    CONSTRAINT `DataPlatformBusinessPartnerGeneralDataLanguage_fk` FOREIGN KEY (`Language`) REFERENCES `data_platform_language_language_data` (`Language`),
+    CONSTRAINT `DataPlatformBusinessPartnerGeneralDataAddressID_fk` FOREIGN KEY (`AddressID`) REFERENCES `data_platform_address_address_data` (`AddressID`)
+
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

@@ -22,6 +22,6 @@ CREATE TABLE `data_platform_business_partner_customer_partner_function_contact_d
   `DefaultContact`                  tinyint(1) DEFAULT NULL,     -- 新規追加
   `IsMarkedForDeletion`             tinyint(1) DEFAULT NULL,     -- 新規追加
   PRIMARY KEY (`BusinessPartner`, `Customer`, `SalesOrganization`, `DistributionChannel`, `Division`, `PartnerCounter`, `ContactID`) ,
-  CONSTRAINT `DataPlatformBusinessPartnerCustomerPartnerFunctionContactData_fk` FOREIGN KEY (`BusinessPartner`, `Customer`, `SalesOrganization`, `DistributionChannel`, `Division`, `PartnerCounter`) REFERENCES `data_platform_business_partner_customer_partner_function_data` (`BusinessPartner`, `Customer`, `SalesOrganization`, `DistributionChannel`, `Division`, `PartnerCounter`)
+  CONSTRAINT `DataPlatformBusinessPartnerCustomerPartnerFunctionContactData_fk` FOREIGN KEY (`BusinessPartner`, `Customer`, `SalesOrganization`, `DistributionChannel`, `Division`, `PartnerCounter`, `PartnerFunction`, `PartnerFunctionBusinessPartner`, `DefaultPartner`) REFERENCES `data_platform_business_partner_customer_partner_function_data` (`BusinessPartner`, `Customer`, `SalesOrganization`, `DistributionChannel`, `Division`, `PartnerCounter`, `PartnerFunction`, `PartnerFunctionBusinessPartner`, `DefaultPartner`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

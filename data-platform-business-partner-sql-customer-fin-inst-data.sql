@@ -16,7 +16,11 @@ CREATE TABLE `data_platform_business_partner_customer_fin_inst_data`  -- 新規�
   `FinInstAccountName`        varchar(40) DEFAULT NULL,     -- 新規追加
   `FinInstAccount`            varchar(18) DEFAULT NULL,     -- 新規追加
   `IsMarkedForDeletion`       tinyint(1) DEFAULT NULL,      -- 新規追加
+
   PRIMARY KEY (`BusinessPartner`, `Customer`, `FinInstIdentification`, `ValidityEndDate`),
-  CONSTRAINT `DataPlatformBusinessPartnerCustomerFinInstData_fk` FOREIGN KEY (`BusinessPartner`, `Customer`) REFERENCES `data_platform_business_partner_customer_data` (`BusinessPartner`, `Customer`)
+
+  CONSTRAINT `DataPlatformBusinessPartnerCustomerFinInstData_fk` FOREIGN KEY (`BusinessPartner`, `Customer`) REFERENCES `data_platform_business_partner_customer_data` (`BusinessPartner`, `Customer`),
+  CONSTRAINT `DataPlatformBusinessPartnerCustomerFinInstDataFinInstAccount_fk` FOREIGN KEY (`FinInstCountry`, `FinInstNumber`, `InternalFinInstCustomerID`, `InternalFinInstAccountID`, `FinInstControlKey`, `FinInstAccountName`, `FinInstAccount`) REFERENCES `data_platform_fin_inst_acccount_item_data` (`FinInstCountry`, `FinInstNumber`, `InternalFinInstCustomerID`, `InternalFinInstAccountID`, `FinInstControlKey`, `FinInstAccountName`, `FinInstAccount`)
+
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

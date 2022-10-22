@@ -7,7 +7,11 @@ CREATE TABLE `data_platform_business_partner_supplier_data`
   `PostingIsBlocked`             tinyint(1) DEFAULT NULL,
   `PurchasingIsBlocked`          tinyint(1) DEFAULT NULL,
   `IsMarkedForDeletion`          tinyint(1) DEFAULT NULL,
+
   PRIMARY KEY (`BusinessPartner`, `Supplier`),
-  CONSTRAINT `DataPlatformBusinessPartnerSupplierData_fk` FOREIGN KEY (`BusinessPartner`) REFERENCES `data_platform_business_partner_general_data` (`BusinessPartner`)
+
+  CONSTRAINT `DataPlatformBusinessPartnerSupplierData_fk` FOREIGN KEY (`BusinessPartner`) REFERENCES `data_platform_business_partner_general_data` (`BusinessPartner`),
+  CONSTRAINT `DataPlatformBusinessPartnerSupplierDataSupplier_fk` FOREIGN KEY (`Supplier`) REFERENCES `data_platform_business_partner_general_data` (`BusinessPartner`)
+
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
