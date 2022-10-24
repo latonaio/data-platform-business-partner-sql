@@ -1,11 +1,11 @@
 CREATE TABLE `data_platform_business_partner_relationship_data`  -- 名称変更
 (
-    `BusinessPartner`                int(10) NOT NULL,
+    `BusinessPartner`                int(12) NOT NULL,
     `RelationshipNumber`             int(4) NOT NULL,
-    `ValidityEndDate`                varchar(80) NOT NULL,
-    `ValidityStartDate`              varchar(80) DEFAULT NULL,
+    `ValidityEndDate`                date NOT NULL,
+    `ValidityStartDate`              date DEFAULT NULL,
     `RelationshipCategory`           varchar(20) DEFAULT NULL,
-    `RelationshipBusinessPartner`    int(10) DEFAULT NULL,        -- 名称変更
+    `RelationshipBusinessPartner`    int(12) DEFAULT NULL,        -- 名称変更
     `BusinessPartnerPerson`          varchar(100) DEFAULT NULL,
     `IsStandardRelationship`         tinyint(1) DEFAULT NULL,
     `IsMarkedForDeletion`            tinyint(1) DEFAULT NULL,      -- 新規追加

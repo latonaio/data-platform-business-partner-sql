@@ -1,12 +1,18 @@
 CREATE TABLE `data_platform_business_partner_customer_data`
 (
-  `BusinessPartner`               int(10) NOT NULL,      -- 新規追加
-  `Customer`                      int(10) NOT NULL,
-  `BillingIsBlockedForCustomer`   tinyint(1) DEFAULT NULL,
-  `CreationDate`                  varchar(80) DEFAULT NULL,
-  `DeliveryIsBlocked`             tinyint(1) DEFAULT NULL,
+  `BusinessPartner`               int(12) NOT NULL,         -- 新規追加
+  `Customer`                      int(12) NOT NULL,
+  `Currency`                      varchar(5) DEFAULT NULL,
+  `PaymentTerms`                  varchar(4) DEFAULT NULL,  -- 名称変更
+  `PaymentMethod`                 varchar(1) DEFAULT NULL,  -- 新規追加
+  `Incoterms`                     varchar(3) DEFAULT NULL,  -- 名称変更
+  `AccountAssignmentGroup`        varchar(2) DEFAULT NULL,  -- 名称変更
+  `CreationDate`                  date DEFAULT NULL,
+  `QuotationIsBlockedForCustomer` tinyint(1) DEFAULT NULL,  -- 新規追加
   `OrderIsBlockedForCustomer`     tinyint(1) DEFAULT NULL,
-  `PostingIsBlocked`              tinyint(1) DEFAULT NULL,
+  `DeliveryIsBlockedForCustomer`  tinyint(1) DEFAULT NULL,
+  `BillingIsBlockedForCustomer`   tinyint(1) DEFAULT NULL,
+  `PostingIsBlockedForCustomer`   tinyint(1) DEFAULT NULL,
   `IsMarkedForDeletion`           tinyint(1) DEFAULT NULL,
 
   PRIMARY KEY (`BusinessPartner`, `Customer`),

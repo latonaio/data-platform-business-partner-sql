@@ -1,7 +1,7 @@
 CREATE TABLE `data_platform_business_partner_supplier_contact_data`
 (
-  `BusinessPartner`               int(10) NOT NULL,            -- 新規追加
-  `Supplier`                      int(10) NOT NULL,            -- 新規追加
+  `BusinessPartner`               int(12) NOT NULL,            -- 新規追加
+  `Supplier`                      int(12) NOT NULL,            -- 新規追加
   `ContactID`                     int(4) NOT NULL,             -- 新規追加
   `ContactPersonName`             varchar(100) DEFAULT NULL,   -- 新規追加
   `EmailAddress`                  varchar(200) DEFAULT NULL,   -- 新規追加
