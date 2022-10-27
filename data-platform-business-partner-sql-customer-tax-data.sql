@@ -4,7 +4,7 @@ CREATE TABLE `data_platform_business_partner_customer_tax_data`
     `Customer`                        int(12) NOT NULL,
     `DepartureCountry`                varchar(3) NOT NULL,
     `TaxCategory`                     varchar(4) DEFAULT NULL,
-    `TaxClassification`               varchar(1) DEFAULT NULL,  -- 名称変更
+    `BPTaxClassification`             varchar(1) DEFAULT NULL,  -- 名称変更
 
     PRIMARY KEY (`BusinessPartner`, `Customer`, `DepartureCountry`),
 

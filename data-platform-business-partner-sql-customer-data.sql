@@ -6,7 +6,7 @@ CREATE TABLE `data_platform_business_partner_customer_data`
   `PaymentTerms`                  varchar(4) DEFAULT NULL,  -- 名称変更
   `PaymentMethod`                 varchar(1) DEFAULT NULL,  -- 新規追加
   `Incoterms`                     varchar(3) DEFAULT NULL,  -- 名称変更
-  `AccountAssignmentGroup`        varchar(2) DEFAULT NULL,  -- 名称変更
+  `BPAccountAssignmentGroup`      varchar(2) DEFAULT NULL,  -- 名称変更
   `CreationDate`                  date DEFAULT NULL,
   `QuotationIsBlockedForCustomer` tinyint(1) DEFAULT NULL,  -- 新規追加
   `OrderIsBlockedForCustomer`     tinyint(1) DEFAULT NULL,
