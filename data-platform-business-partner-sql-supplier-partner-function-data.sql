@@ -6,7 +6,7 @@ CREATE TABLE `data_platform_business_partner_supplier_partner_function_data`
 --`DistributionChannel`             varchar(2) NOT NULL,      -- 新規追加
 --`Division`                        varchar(2) NOT NULL,      -- 新規追加
   `PartnerCounter`                  int(3) NOT NULL,
-  `PartnerFunction`                 varchar(4) DEFAULT NULL,
+  `PartnerFunction`                 varchar(40) DEFAULT NULL,
   `PartnerFunctionBusinessPartner`  int(12) DEFAULT NULL,     -- 新規追加
   `DefaultPartner`                  tinyint(1) DEFAULT NULL,
   `CreationDate`                    date DEFAULT NULL,

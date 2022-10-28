@@ -6,7 +6,7 @@ CREATE TABLE `data_platform_business_partner_supplier_data`
   `PaymentTerms`                  varchar(4) DEFAULT NULL,  -- 名称変更
   `PaymentMethod`                 varchar(1) DEFAULT NULL,  -- 新規追加
   `Incoterms`                     varchar(3) DEFAULT NULL,  -- 名称変更
-  `AccountAssignmentGroup`        varchar(2) DEFAULT NULL,  -- 名称変更
+  `BPAccountAssignmentGroup`      varchar(2) DEFAULT NULL,  -- 名称変更
   `InvoiceIsGoodsReceiptBased`    tinyint(1) DEFAULT NULL,
   `PurOrdAutoGenerationIsAllowed` tinyint(1) DEFAULT NULL,
   `CreationDate`                  date DEFAULT NULL,

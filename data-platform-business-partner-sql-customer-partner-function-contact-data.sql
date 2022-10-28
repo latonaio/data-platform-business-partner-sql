@@ -7,7 +7,7 @@ CREATE TABLE `data_platform_business_partner_customer_partner_function_contact_d
 --`Division`                        varchar(2) NOT NULL,         -- 新規追加
   `PartnerCounter`                  int(3) NOT NULL,             -- 新規追加
   `ContactID`                       int(4) NOT NULL,             -- 新規追加
-  `PartnerFunction`                 varchar(4) DEFAULT NULL,     -- 新規追加
+  `PartnerFunction`                 varchar(40) DEFAULT NULL,     -- 新規追加
   `PartnerFunctionBusinessPartner`  int(12) DEFAULT NULL,        -- 新規追加
   `DefaultPartner`                  tinyint(1) DEFAULT NULL,     -- 新規追加  
   `ContactPersonName`               varchar(100) DEFAULT NULL,   -- 新規追加
