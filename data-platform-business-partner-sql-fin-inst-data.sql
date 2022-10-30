@@ -19,7 +19,7 @@ CREATE TABLE `data_platform_business_partner_fin_inst_data`  -- 新規追加
   PRIMARY KEY (`BusinessPartner`, `FinInstIdentification`, `ValidityEndDate`),
 
   CONSTRAINT `DataPlatformBusinessPartnerFinInstData_fk` FOREIGN KEY (`BusinessPartner`) REFERENCES `data_platform_business_partner_general_data` (`BusinessPartner`),
-  CONSTRAINT `DataPlatformBusinessPartnerFinInstDataFinInstAccount_fk` FOREIGN KEY (`FinInstCountry`, `FinInstNumber`, `InternalFinInstCustomerID`, `InternalFinInstAccountID`, `FinInstControlKey`, `FinInstAccountName`, `FinInstAccount`) REFERENCES `data_platform_fin_inst_account_item_data` (`FinInstCountry`, `FinInstNumber`, `InternalFinInstCustomerID`, `InternalFinInstAccountID`, `FinInstControlKey`, `FinInstAccountName`, `FinInstAccount``)
+  CONSTRAINT `DataPlatformBusinessPartnerFinInstDataFinInstAccount_fk` FOREIGN KEY (`FinInstCountry`, `FinInstNumber`, `InternalFinInstCustomerID`, `InternalFinInstAccountID`, `FinInstControlKey`, `FinInstAccountName`, `FinInstAccount`) REFERENCES `data_platform_fin_inst_account_item_data` (`FinInstCountry`, `FinInstNumber`, `InternalFinInstCustomerID`, `InternalFinInstAccountID`, `FinInstControlKey`, `FinInstAccountName`, `FinInstAccount`)
 
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

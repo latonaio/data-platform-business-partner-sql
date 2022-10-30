@@ -1,16 +1,16 @@
 CREATE TABLE `data_platform_business_partner_supplier_data`
 (
-  `BusinessPartner`               int(12) NOT NULL,         -- 新規追加
+  `BusinessPartner`               int(12) NOT NULL,
   `Supplier`                      int(12) NOT NULL,
   `Currency`                      varchar(5) DEFAULT NULL,
-  `PaymentTerms`                  varchar(4) DEFAULT NULL,  -- 名称変更
-  `PaymentMethod`                 varchar(1) DEFAULT NULL,  -- 新規追加
-  `Incoterms`                     varchar(3) DEFAULT NULL,  -- 名称変更
-  `BPAccountAssignmentGroup`      varchar(2) DEFAULT NULL,  -- 名称変更
+  `PaymentTerms`                  varchar(4) DEFAULT NULL,
+  `PaymentMethod`                 varchar(1) DEFAULT NULL,
+  `Incoterms`                     varchar(3) DEFAULT NULL,
+  `BPAccountAssignmentGroup`      varchar(2) DEFAULT NULL,
   `InvoiceIsGoodsReceiptBased`    tinyint(1) DEFAULT NULL,
   `PurOrdAutoGenerationIsAllowed` tinyint(1) DEFAULT NULL,
   `CreationDate`                  date DEFAULT NULL,
-  `QuotationIsBlockedForSupplier` tinyint(1) DEFAULT NULL,  -- 新規追加
+  `QuotationIsBlockedForSupplier` tinyint(1) DEFAULT NULL,
   `OrderIsBlockedForSupplier`     tinyint(1) DEFAULT NULL,
   `DeliveryIsBlockedForSupplier`  tinyint(1) DEFAULT NULL,
   `BillingIsBlockedForSupplier`   tinyint(1) DEFAULT NULL,

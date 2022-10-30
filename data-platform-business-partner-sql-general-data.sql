@@ -10,7 +10,7 @@ CREATE TABLE `data_platform_business_partner_general_data`
   `Country`                         varchar(3) NOT NULL,
   `Language`                        varchar(2) NOT NULL,
   `Currency`                        varchar(5) NOT NULL,
-  `LastChangeDate`                  date DEFAULT NOT,
+  `LastChangeDate`                  date DEFAULT NULL,
   `LastChangeTime`                  time DEFAULT NULL,
   `OrganizationBPName1`             varchar(100) DEFAULT NULL,
   `OrganizationBPName2`             varchar(100) DEFAULT NULL,

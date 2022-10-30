@@ -1,17 +1,15 @@
-CREATE TABLE `data_platform_business_partner_customer_partner_plant_data` -- 新規追加
+CREATE TABLE `data_platform_business_partner_customer_partner_plant_data`
 (
-  `BusinessPartner`                 int(12) NOT NULL,           -- 新規追加
-  `Customer`                        int(12) NOT NULL,           -- 新規追加
---`SalesOrganization`               varchar(4) NOT NULL,        -- 新規追加 
---`DistributionChannel`             varchar(2) NOT NULL,        -- 新規追加
---`Division`                        varchar(2) NOT NULL,        -- 新規追加
-  `PartnerCounter`                  int(3) NOT NULL,            -- 新規追加
-  `PartnerFunction`                 varchar(40) NOT NULL,        -- 新規追加
-  `PartnerFunctionBusinessPartner`  int(12) NOT NULL,           -- 新規追加
-  `PlantCounter`                    int(3) NOT NULL,          　-- 新規追加
-  `Plant`                           varchar(4) DEFAULT NULL,    -- 新規追加
-  `DefaultPlant`                    tinyint(1) DEFAULT NULL,    -- 新規追加
-  `IsMarkedForDeletion`             tinyint(1) DEFAULT NULL,    -- 新規追加
+  `BusinessPartner`                 int(12) NOT NULL,
+  `Customer`                        int(12) NOT NULL,
+  `PartnerCounter`                  int(3) NOT NULL,
+  `PartnerFunction`                 varchar(40) NOT NULL,
+  `PartnerFunctionBusinessPartner`  int(12) NOT NULL,
+  `PlantCounter`                    int(3) NOT NULL,
+  `Plant`                           varchar(4) DEFAULT NULL,
+  `DefaultPlant`                    tinyint(1) DEFAULT NULL,
+  `DefaultStockConfirmationPlant`   tinyint(1) DEFAULT NULL,
+  `IsMarkedForDeletion`             tinyint(1) DEFAULT NULL,
   
   PRIMARY KEY (`BusinessPartner`, `Customer`, `PartnerCounter`, `PartnerFunction`, `PartnerFunctionBusinessPartner`, `PlantCounter`),
   

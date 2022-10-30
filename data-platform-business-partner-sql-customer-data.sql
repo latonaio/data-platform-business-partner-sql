@@ -1,14 +1,14 @@
 CREATE TABLE `data_platform_business_partner_customer_data`
 (
-  `BusinessPartner`               int(12) NOT NULL,         -- 新規追加
+  `BusinessPartner`               int(12) NOT NULL,
   `Customer`                      int(12) NOT NULL,
   `Currency`                      varchar(5) DEFAULT NULL,
-  `PaymentTerms`                  varchar(4) DEFAULT NULL,  -- 名称変更
-  `PaymentMethod`                 varchar(1) DEFAULT NULL,  -- 新規追加
-  `Incoterms`                     varchar(3) DEFAULT NULL,  -- 名称変更
-  `BPAccountAssignmentGroup`      varchar(2) DEFAULT NULL,  -- 名称変更
+  `PaymentTerms`                  varchar(4) DEFAULT NULL,
+  `PaymentMethod`                 varchar(1) DEFAULT NULL,
+  `Incoterms`                     varchar(3) DEFAULT NULL,
+  `BPAccountAssignmentGroup`      varchar(2) DEFAULT NULL,
   `CreationDate`                  date DEFAULT NULL,
-  `QuotationIsBlockedForCustomer` tinyint(1) DEFAULT NULL,  -- 新規追加
+  `QuotationIsBlockedForCustomer` tinyint(1) DEFAULT NULL,
   `OrderIsBlockedForCustomer`     tinyint(1) DEFAULT NULL,
   `DeliveryIsBlockedForCustomer`  tinyint(1) DEFAULT NULL,
   `BillingIsBlockedForCustomer`   tinyint(1) DEFAULT NULL,
