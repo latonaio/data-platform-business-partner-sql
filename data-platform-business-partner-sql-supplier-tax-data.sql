@@ -1,10 +1,10 @@
-CREATE TABLE `data_platform_business_partner_supplier_tax_data` -- 新規追加
+CREATE TABLE `data_platform_business_partner_supplier_tax_data`
 (
-    `BusinessPartner`                 int(12) NOT NULL,           -- 新規追加
-    `Supplier`                        int(12) NOT NULL,           -- 新規追加
-    `DepartureCountry`                varchar(3) NOT NULL,        -- 新規追加
-    `TaxCategory`                     varchar(4) DEFAULT NULL,    -- 新規追加
-    `BPTaxClassification`             varchar(1) DEFAULT NULL,    -- 新規追加
+    `BusinessPartner`                 int(12) NOT NULL,
+    `Supplier`                        int(12) NOT NULL,
+    `DepartureCountry`                varchar(3) NOT NULL,
+    `TaxCategory`                     varchar(4) DEFAULT NULL,
+    `BPTaxClassification`             varchar(1) DEFAULT NULL,
 
     PRIMARY KEY (`BusinessPartner`, `Supplier`, `DepartureCountry`),
 

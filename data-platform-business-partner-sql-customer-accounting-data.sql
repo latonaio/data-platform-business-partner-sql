@@ -1,11 +1,9 @@
-CREATE TABLE `data_platform_business_partner_customer_accounting_data`   -- 名称変更
+CREATE TABLE `data_platform_business_partner_customer_accounting_data`
 (
     `BusinessPartner`                 int(12) NOT NULL,
     `Customer`                        int(12) NOT NULL,
     `CustomerSupplierClearingIsUsed`  tinyint(1) DEFAULT NULL,
     `HouseBank`                       varchar(5) DEFAULT NULL,
---  `PaymentTerms`                    varchar(4) DEFAULT NULL,
---  `PaymentMethod`                   varchar(1) DEFAULT NULL,
     `ReconciliationAccount`           varchar(10) DEFAULT NULL,
     `IsMarkedForDeletion`             tinyint(1) DEFAULT NULL,
 
