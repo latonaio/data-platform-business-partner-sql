@@ -1,4 +1,4 @@
-CREATE TABLE `data_platform_business_partner_fin_inst_data`
+CREATE TABLE `data_platform_business_partner_general_fin_inst_data`
 (
   `BusinessPartner`           int(12) NOT NULL,
   `FinInstIdentification`     int(4) NOT NULL,
