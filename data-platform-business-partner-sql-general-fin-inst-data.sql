@@ -16,12 +16,15 @@ CREATE TABLE `data_platform_business_partner_general_fin_inst_data`
   `FinInstControlKey`         varchar(2) DEFAULT NULL,
   `FinInstAccountName`        varchar(40) DEFAULT NULL,
   `FinInstAccount`            varchar(18) DEFAULT NULL,
+  `HouseBank`                 varchar(5) DEFAULT NULL,
+  `HouseBankAccount`          varchar(5) DEFAULT NULL,
   `IsMarkedForDeletion`       tinyint(1) DEFAULT NULL,
 
   PRIMARY KEY (`BusinessPartner`, `FinInstIdentification`, `ValidityEndDate`, `ValidityStartDate`),
 
   CONSTRAINT `DataPlatformBusinessPartnerFinInstData_fk` FOREIGN KEY (`BusinessPartner`) REFERENCES `data_platform_business_partner_general_data` (`BusinessPartner`),
-  CONSTRAINT `DataPlatformBusinessPartnerFinInstDataFinInstAccount_fk` FOREIGN KEY (`FinInstCountry`, `FinInstCode`, `FinInstBranchCode`, `FinInstFullCode`, `InternalFinInstCustomerID`, `InternalFinInstAccountID`) REFERENCES `data_platform_fin_inst_account_item_data` (`FinInstCountry`, `FinInstNumber`, `InternalFinInstCustomerID`, `InternalFinInstAccountID`)
+  CONSTRAINT `DataPlatformBusinessPartnerFinInstDataFinInstAccount_fk` FOREIGN KEY (`FinInstCountry`, `FinInstCode`, `FinInstBranchCode`, `FinInstFullCode`, `InternalFinInstCustomerID`, `InternalFinInstAccountID`) REFERENCES `data_platform_fin_inst_account_item_data` (`FinInstCountry`, `FinInstNumber`, `InternalFinInstCustomerID`, `InternalFinInstAccountID`),
+  CONSTRAINT `DataPlatformBusinessPartnerFinInstDataHouseBank_fk` FOREIGN KEY (`HouseBank`, `HouseBankAccount`) REFERENCES `data_platform_house_bank_house_bank_data` (`HouseBank`, `HouseBankAccount`)
 
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

@@ -4,7 +4,7 @@ CREATE TABLE `data_platform_business_partner_supplier_fin_inst_data`
   `Supplier`                  int(12) NOT NULL,
   `FinInstIdentification`     int(4) NOT NULL,
   `ValidityEndDate`           date NOT NULL,
-  `ValidityStartDate`         date DNOTEFAULT NULL,
+  `ValidityStartDate`         date NOT NULL,
   `FinInstCountry`            varchar(3) NOT NULL,
   `FinInstCode`               varchar(10) NOT NULL,
   `FinInstBranchCode`         varchar(10) NOT NULL,

@@ -22,8 +22,6 @@ CREATE TABLE `data_platform_business_partner_general_data`
   `BPTag4`                          varchar(40) DEFAULT NULL,
   `OrganizationFoundationDate`      date DEFAULT NULL,
   `OrganizationLiquidationDate`     date DEFAULT NULL,
-  `SearchTerm1`                     varchar(40) DEFAULT NULL,
-  `SearchTerm2`                     varchar(40) DEFAULT NULL,
   `BusinessPartnerBirthplaceName`   varchar(100) DEFAULT NULL,
   `BusinessPartnerDeathDate`        date DEFAULT NULL,
   `BusinessPartnerIsBlocked`        tinyint(1) DEFAULT NULL,
