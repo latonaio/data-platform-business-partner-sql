@@ -9,7 +9,7 @@ https://api.XXXXXXXX.com/api/OP_API_XXXXXXX_XXX/overview
 data-platform-business-partner-sql には、sqlの設定ファイルとして、以下のファイルが含まれます。 
 
 * data-platform-business-partner-sql-general-data.sql （データ連携基盤 ビジネスパートナ - 一般データ）
-* data-platform-business-partner-sql-general-pdf-data.sql（データ連携基盤 ビジネスパートナ - 一般PDFデータ）
+* data-platform-business-partner-sql-general-doc-data.sql（データ連携基盤 ビジネスパートナ - 一般文書データ）
 * data-platform-business-partner-sql-role-data.sql（データ連携基盤 ビジネスパートナ - ロールデータ）  
 * data-platform-business-partner-sql-general-fin-inst-data.sql （データ連携基盤 ビジネスパートナ - 一般金融機関データ）
 * data-platform-business-partner-sql-relationship-data.sql （データ連携基盤 ビジネスパートナ - 関係データ）
